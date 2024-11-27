@@ -495,10 +495,13 @@ body {
 
 .modal-content {
   position: absolute;
-  width: 688px;
+  top: 24px;
+  left: 24px;
+  width: 90vw;
   height: 685px;
   padding: 24px;
   background-color: #fff;
+  border-radius: 8px;
 }
 
 .modal-content::before {
@@ -512,10 +515,20 @@ body {
   z-index: -1;
 }
 
-@media screen and (width>768px) {
+@media screen and (width>1024px) {
+  .modal-content {
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+    width: 592px;
+    height: 685px;
+  }
+}
+/* @media screen and (width>768px) {
   .modal {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     width: 100vw;
     height: 100vh;
@@ -524,15 +537,7 @@ body {
     left: 0;
     margin: 0;
   }
-}
-
-@media screen and (width>1024px) {
-  .modal-content {
-    position: relative;
-    width: 592px;
-    height: 685px;
-  }
-}
+} */
 
 .verification {
   height: 48px;
@@ -575,6 +580,10 @@ body {
   height: 48px;
   width: 48px;
   border-radius: 4px;
+}
+
+.main {
+  z-index: -1;
 }
 
 .pointer-none {

@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Product List</title>
   </head>
   <body>
@@ -22,248 +25,553 @@
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-waffle-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-waffle-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-waffle-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-waffle-mobile.jpg" alt="waffle" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-waffle-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-waffle-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-waffle-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-waffle-mobile.jpg"
+                  alt="waffle"
+                />
               </picture>
-              <button class="add-to-cart" data-name="Waffle with Berries" data-price="6.50" data-type="button">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                class="add-to-cart"
+                data-name="Waffle with Berries"
+                data-price="6.50"
+                data-thumb="waffle"
+                data-type="button"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Waffle with Berries" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Waffle with Berries"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Waffle with Berries" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Waffle with Berries"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Waffle</span>
-              <span data-dish="waffle" class="dish-name">Waffle with Berries</span>
-              <span class="price">$<span data-singleprice="6.50">6.50</span></span>
+              <span data-dish="waffle" class="dish-name"
+                >Waffle with Berries</span
+              >
+              <span class="price"
+                >$<span data-singleprice="6.50">6.50</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-creme-brulee-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-creme-brulee-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-creme-brulee-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-creme-brulee-mobile.jpg" alt="creme-brulee" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-creme-brulee-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-creme-brulee-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-creme-brulee-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-creme-brulee-mobile.jpg"
+                  alt="creme-brulee"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Vanilla Bean Crème Brûlée" data-price="7.00">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                data-thumb="creme-brulee"
+                class="add-to-cart"
+                data-name="Vanilla Bean Crème Brûlée"
+                data-price="7.00"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Vanilla Bean Crème Brûlée" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Vanilla Bean Crème Brûlée"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Vanilla Bean Crème Brûlée" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Vanilla Bean Crème Brûlée"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Crème Brûlée</span>
-              <span data-dish="brulee" class="dish-name">Vanilla Bean Crème Brûlée</span>
-              <span class="price">$<span data-singleprice="7.00">7.00</span></span>
+              <span data-dish="brulee" class="dish-name"
+                >Vanilla Bean Crème Brûlée</span
+              >
+              <span class="price"
+                >$<span data-singleprice="7.00">7.00</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-macaron-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-macaron-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-macaron-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-macaron-mobile.jpg" alt="macaron" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-macaron-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-macaron-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-macaron-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-macaron-mobile.jpg"
+                  alt="macaron"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Macaron Mix of Five" data-price="8.00">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                data-thumb="macaron"
+                class="add-to-cart"
+                data-name="Macaron Mix of Five"
+                data-price="8.00"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Macaron Mix of Five" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Macaron Mix of Five"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Macaron Mix of Five" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Macaron Mix of Five"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Macaron</span>
-              <span data-dish="macaron" class="dish-name">Macaron Mix of Five</span>
-              <span class="price">$<span data-singleprice="8.00">8.00</span></span>
+              <span data-dish="macaron" class="dish-name"
+                >Macaron Mix of Five</span
+              >
+              <span class="price"
+                >$<span data-singleprice="8.00">8.00</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-tiramisu-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-tiramisu-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-tiramisu-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-tiramisu-mobile.jpg" alt="tiramisu" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-tiramisu-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-tiramisu-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-tiramisu-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-tiramisu-mobile.jpg"
+                  alt="tiramisu"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Classic Tiramisu" data-price="5.50">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                class="add-to-cart"
+                data-thumb="tiramisu"
+                data-name="Classic Tiramisu"
+                data-price="5.50"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Classic Tiramisu" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Classic Tiramisu"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Classic Tiramisu" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Classic Tiramisu"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Tiramisu</span>
-              <span data-dish="tiramisu" class="dish-name">Classic Tiramisu</span>
-              <span class="price">$<span data-singleprice="5.50">5.50</span></span>
+              <span data-dish="tiramisu" class="dish-name"
+                >Classic Tiramisu</span
+              >
+              <span class="price"
+                >$<span data-singleprice="5.50">5.50</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-baklava-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-baklava-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-baklava-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-baklava-mobile.jpg" alt="baklava" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-baklava-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-baklava-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-baklava-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-baklava-mobile.jpg"
+                  alt="baklava"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Pistachio Baklava" data-price="4.00">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                class="add-to-cart"
+                data-thumb="baklava"
+                data-name="Pistachio Baklava"
+                data-price="4.00"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Pistachio Baklava" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Pistachio Baklava"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Pistachio Baklava" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Pistachio Baklava"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Baklava</span>
-              <span data-dish="baklava" class="dish-name">Pistachio Baklava</span>
-              <span class="price">$<span data-singleprice="4.00">4.00</span></span>
+              <span data-dish="baklava" class="dish-name"
+                >Pistachio Baklava</span
+              >
+              <span class="price"
+                >$<span data-singleprice="4.00">4.00</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-meringue-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-meringue-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-meringue-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-meringue-mobile.jpg" alt="meringue" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-meringue-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-meringue-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-meringue-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-meringue-mobile.jpg"
+                  alt="meringue"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Lemon Meringue Pie" data-price="5.00">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                class="add-to-cart"
+                data-thumb="meringue"
+                data-name="Lemon Meringue Pie"
+                data-price="5.00"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Lemon Meringue Pie" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Lemon Meringue Pie"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Lemon Meringue Pie" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Lemon Meringue Pie"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Pie</span>
-              <span data-dish="meringue" class="dish-name">Lemon Meringue Pie</span>
-              <span class="price">$<span data-singleprice="5.00">5.00</span></span>
+              <span data-dish="meringue" class="dish-name"
+                >Lemon Meringue Pie</span
+              >
+              <span class="price"
+                >$<span data-singleprice="5.00">5.00</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-cake-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-cake-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-cake-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-cake-mobile.jpg" alt="cake" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-cake-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-cake-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-cake-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-cake-mobile.jpg"
+                  alt="cake"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Red Velvet Cake" data-price="4.50">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                class="add-to-cart"
+                data-thumb="cake"
+                data-name="Red Velvet Cake"
+                data-price="4.50"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Red Velvet Cake" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Red Velvet Cake"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Red Velvet Cake" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Red Velvet Cake"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Cake</span>
               <span data-dish="cake" class="dish-name">Red Velvet Cake</span>
-              <span class="price">$<span data-singleprice="4.50">4.50</span></span>
+              <span class="price"
+                >$<span data-singleprice="4.50">4.50</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-brownie-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-brownie-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-brownie-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-brownie-mobile.jpg" alt="brownie" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-brownie-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-brownie-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-brownie-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-brownie-mobile.jpg"
+                  alt="brownie"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Salted Caramel Brownie" data-price="5.50">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                data-thumb="brownie"
+                class="add-to-cart"
+                data-name="Salted Caramel Brownie"
+                data-price="5.50"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Salted Caramel Brownie" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Salted Caramel Brownie"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Salted Caramel Brownie" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Salted Caramel Brownie"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Brownie</span>
-              <span data-dish="brownie" class="dish-name">Salted Caramel Brownie</span>
-              <span class="price">$<span data-singleprice="5.50">5.50</span></span>
+              <span data-dish="brownie" class="dish-name"
+                >Salted Caramel Brownie</span
+              >
+              <span class="price"
+                >$<span data-singleprice="5.50">5.50</span></span
+              >
             </div>
           </div>
           <div class="each-dish">
             <div class="img-div">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./assets/images/image-panna-cotta-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="./assets/images/image-panna-cotta-tablet.jpg" />
-                <source media="(min-width: 360px)" srcset="./assets/images/image-panna-cotta-mobile.jpg" />
-                <img class="dish-pic" src="./assets/images/image-panna-cotta-mobile.jpg" alt="panna-cotta" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/images/image-panna-cotta-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/image-panna-cotta-tablet.jpg"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./assets/images/image-panna-cotta-mobile.jpg"
+                />
+                <img
+                  class="dish-pic"
+                  src="./assets/images/image-panna-cotta-mobile.jpg"
+                  alt="panna-cotta"
+                />
               </picture>
-              <button data-type="button" class="add-to-cart" data-name="Vanilla Panna Cotta" data-price="6.50">
-                <img class="pointer-none" src="./assets/images/icon-add-to-cart.svg" alt="cart-ico" />
+              <button
+                data-type="button"
+                data-thumb="panna-cotta"
+                class="add-to-cart"
+                data-name="Vanilla Panna Cotta"
+                data-price="6.50"
+              >
+                <img
+                  class="pointer-none"
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="cart-ico"
+                />
                 <span class="pointer-none">Add to Cart</span>
               </button>
               <div class="hidden-add-to-cart remove-hidden-add-to-cart">
-                <div data-type="decrease" data-name="Vanilla Panna Cotta" class="decrease"></div>
+                <div
+                  data-type="decrease"
+                  data-name="Vanilla Panna Cotta"
+                  class="decrease"
+                ></div>
                 <span>1</span>
-                <div data-type="increase" data-name="Vanilla Panna Cotta" class="increase"></div>
+                <div
+                  data-type="increase"
+                  data-name="Vanilla Panna Cotta"
+                  class="increase"
+                ></div>
               </div>
             </div>
             <div class="name-and-price">
               <span class="category">Panna Cotta</span>
-              <span data-dish="panna" class="dish-name">Vanilla Panna Cotta</span>
-              <span class="price">$<span data-singleprice="6.50">6.50</span></span>
+              <span data-dish="panna" class="dish-name"
+                >Vanilla Panna Cotta</span
+              >
+              <span class="price"
+                >$<span data-singleprice="6.50">6.50</span></span
+              >
             </div>
           </div>
         </div>
         <div class="cart">
-          <h2 class="cart-title">Your Cart (<span id="total-quantity">0</span>)</h2>
+          <h2 class="cart-title">
+            Your Cart (<span id="total-quantity">0</span>)
+          </h2>
           <div id="to-add-in-cart"></div>
-          <!--
-            <div>
-              <div class="item-ordered-and-prices">
-                <div class="unitary-item">
-                  <span class="item-ordered-title">Classic Tiramisu</span>
-                  <div class="amount-and-price">
-                    <span class="amount">1x</span>
-                    <span class="unitary-price">@$7.50</span>
-                    <span class="price-per-product">$7.50</span>
-                  </div>
-                </div>
-                <div class="delete-cart"></div>
-              </div>
-            </div>
-            -->
+
           <div class="total-order">
             <span>Order Total</span>
-            <span class="total-price">$ <span id="total-amount">7.50</span></span>
+            <span class="total-price"
+              >$ <span id="total-amount">7.50</span></span
+            >
           </div>
 
           <div class="carbon-neutral">
             <div class="cn-logo"></div>
             <span>This is a <b>carbon-neutral</b> delivery</span>
           </div>
-          <button id="confirm-modal" class="confirm-button">Confirm Order</button>
+          <button id="confirm-modal" class="confirm-button">
+            Confirm Order
+          </button>
           <div id="empty-cart" class="empty-cart">
             <span>Your added items will appear here</span>
           </div>
